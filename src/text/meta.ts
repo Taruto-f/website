@@ -16,4 +16,4 @@ export const toolmetas = {
 	},
 } as const satisfies Record<string, ToolMeta>;
 
-export const siteurl = "https://e6nlaq.vercel.app";
+export const siteurl = "https://f-haruto.vercel.app";
