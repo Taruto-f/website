@@ -16,7 +16,7 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = Object.assign({}, convertMetadata(toolmetas[""]), {
-	title: "e6nlaq's Lab",
+	title: "Taruto's-Home page",
 });
 
 export default function RootLayout({
@@ -45,7 +45,7 @@ export default function RootLayout({
 						<footer className="mt-auto">
 							<div className="flex justify-center items-center py-4">
 								<p className={`${sourceCodePro.className}  text-sm`}>
-									(C) 2025 e6nlaq
+									(C) 2025 Taruto
 								</p>
 							</div>
 						</footer>

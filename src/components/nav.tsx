@@ -18,7 +18,7 @@ export function Nav() {
 			<div className="flex items-center justify-center w-screen pt-4 px-4">
 				<p className={`${sourceCodePro.className} text-lg`}>
 					<Link href="/">
-						<span className="font-bold">e6nlaq's Lab</span>
+						<span className="font-bold">Taruto's-Home page</span>
 					</Link>
 					{/* <span>{` - ${pages[pathname.split("/")[1]]}`}</span> */}
 					<span>{" - "}</span>
