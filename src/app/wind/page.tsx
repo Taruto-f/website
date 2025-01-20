@@ -9,9 +9,7 @@ const fetcher: Fetcher<string, string> = (url) =>
 	fetch(url).then((res) => res.text());
 
 export default function Wind() {
-	const { data: text, error } = useSWR<string>("/next.svaag", fetcher);
 	const { theme } = useTheme();
-	console.log(error);
 	// useEffect(() => {
 
 	// 	(async () => {
@@ -33,9 +31,6 @@ export default function Wind() {
 			>
 				aaaa
 			</Button>
-
-			<p>{text}</p>
-			<p>{error}</p>
 		</div>
 	);
 }

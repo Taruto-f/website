@@ -14,6 +14,10 @@ export const toolmetas = {
 		title: "wind, hidden",
 		description: "?",
 	},
+	calc:{
+		title:"Denntaku",
+		description:""
+	}
 } as const satisfies Record<string, ToolMeta>;
 
 export const siteurl = "https://f-haruto.vercel.app";

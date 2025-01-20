@@ -16,7 +16,7 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = Object.assign({}, convertMetadata(toolmetas[""]), {
-	title: "Taruto's-Home page",
+	title: "Taruto's-Blog",
 });
 
 export default function RootLayout({

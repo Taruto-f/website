@@ -85,24 +85,24 @@ export default function Home() {
 
 			<Store title="Accounts" description="生活拠点">
 				<Item
-					name="X (@ru_milmil)"
-					description="たまに呟く...?"
-					url="https://x.com/ru_milmil"
+					name="instagram (@haruto.f_0414)"
+					description="たまにストーリーあげる...?"
+					url="https://www.instagram.com/haruto.f_0414?igsh=MXV6eDlzeXFiMmllaQ%3D%3D&utm_source=qr"
 				/>
 				<Item
-					name="GitHub (@e6nlaq)"
-					description="いろいろ作ってる"
-					url="https://github.com/e6nlaq"
+					name="GitHub (@Taruto-f)"
+					description="まだ初心者"
+					url="https://github.com/Taruto-f"
 				/>
 				<Item
-					name="AtCoder (@x__0)"
-					description="こつこつ競プロ"
-					url="https://atcoder.jp/users/x__0"
+					name="AtCoder (@Taruto-f)"
+					description="始めたばかり"
+					url="https://atcoder.jp/users/Taruto_F"
 				/>
 				<Item
-					name="Discord (@e6nlaq)"
-					description="フレリクはご自由に(たぶん通す)"
-					url="https://discord.com/users/1171719078352785452"
+					name="Discord (@Taruto)"
+					description="フレリクはご自由にどうぞ(たぶん通す)"
+					url="https://discord.com/users/1095597729020915813"
 				/>
 				<Item
 					name="Qiita (@e6nlaq)"
@@ -110,9 +110,9 @@ export default function Home() {
 					url="https://qiita.com/e6nlaq"
 				/>
 				<Item
-					name="Scratch (@sakamotor)"
-					description="遺産"
-					url="https://scratch.mit.edu/users/sakamotor"
+					name="Scratch (@-5min-)"
+					description="作興最近始めた"
+					url="https://scratch.mit.edu/users/-5min-"
 				/>
 			</Store>
 			<ChevronDown />
@@ -130,7 +130,7 @@ export default function Home() {
 				))}
 			</Store> */}
 
-			<Store title="Classic" description="旧作たち">
+			<Store title="Classic" description="友達の作品">
 				<Item
 					name="rinu.jp Checker"
 					description="rinu.jpに特定ツールが仕込まれているかチェックするサイト"
