@@ -111,7 +111,7 @@ export default function Home() {
 				/>
 				<Item
 					name="Scratch (@-5min-)"
-					description="作興最近始めた"
+					description="フォローしてね"
 					url="https://scratch.mit.edu/users/-5min-"
 				/>
 			</Store>
