@@ -86,7 +86,7 @@ export default function Home() {
 			<Store title="Accounts" description="生活拠点">
 				<Item
 					name="instagram (@haruto.f_0414)"
-					description="たまにストーリーあげる...?"
+					description="フォローしてね"
 					url="https://www.instagram.com/haruto.f_0414?igsh=MXV6eDlzeXFiMmllaQ%3D%3D&utm_source=qr"
 				/>
 				<Item
@@ -101,13 +101,13 @@ export default function Home() {
 				/>
 				<Item
 					name="Discord (@Taruto)"
-					description="フレリクはご自由にどうぞ(たぶん通す)"
+					description="フレリクしてね"
 					url="https://discord.com/users/1095597729020915813"
 				/>
 				<Item
-					name="Qiita (@e6nlaq)"
-					description="書くことがない..."
-					url="https://qiita.com/e6nlaq"
+					name="Duoringo (@taruto414)"
+					description="I like English"
+					url="https://www.duolingo.com/profile/taruto414"
 				/>
 				<Item
 					name="Scratch (@-5min-)"
@@ -130,31 +130,16 @@ export default function Home() {
 				))}
 			</Store> */}
 
-			<Store title="Classic" description="友達の作品">
+			<Store title="Classic" description="私の作品">
 				<Item
-					name="rinu.jp Checker"
-					description="rinu.jpに特定ツールが仕込まれているかチェックするサイト"
-					url="https://e6nlaq.github.io/rinucf-checker"
+					name="Toolbox"
+					description="いろいろなツールが入っているサイト"
+					url="https://taruto-f.github.io/Toolbox/toolbox-app/"
 				/>
 				<Item
-					name="School Hit"
-					description="学校で日にちから指名される確率を計算するサイト"
-					url="https://e6nlaq.github.io/school-hits"
-				/>
-				<Item
-					name="Study Typing"
-					description="学習単語タイピングサイト"
-					url="https://study-typing.vercel.app"
-				/>
-				<Item
-					name="Aqua"
-					description="Fast, short, and easy."
-					url="https://e6nlaq.github.io/aqua"
-				/>
-				<Item
-					name="e6nlaq.github.io"
-					description="旧サイト"
-					url="https://e6nlaq.github.io"
+					name="スペースインベーダー"
+					description="インベーダーゲーム"
+					url="https://taruto-f.github.io/invader-game/invader_game/"
 				/>
 			</Store>
 		</div>
