@@ -11,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { type ReactNode, useEffect, useState } from "react";
 import { Source_Code_Pro } from "next/font/google";
 import Link from "next/link";
+// biome-ignore lint/style/useImportType: <explanation>
 import { toolmetas } from "@/text/meta";
 import { ChevronDown } from "lucide-react";
 
@@ -26,10 +27,14 @@ function Store({
 	return (
 		<div className="w-full px-8 *:my-4">
 			<div className="flex items-center *:mr-4">
-				<h2 className={`text-3xl font-bold ${sourceCodePro.className}`}>
+				<h2
+					className={`text-3xl font-bold ${sourceCodePro.className} bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text`}
+				>
 					{title}
 				</h2>
-				<p className="text-xs">{description}</p>
+				<p className="text-sm text-gray-600 dark:text-gray-400">
+					{description}
+				</p>
 			</div>
 			<div className="flex flex-wrap *:mr-8 *:mb-8">{children}</div>
 		</div>
@@ -44,14 +49,20 @@ function Item({
 	return (
 		<>
 			<Link href={url}>
-				<Card className="min-w-52">
+				<Card className="min-w-52 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 dark:hover:shadow-purple-500/20">
 					<CardHeader>
 						<CardTitle>
-							<span className={sourceCodePro.className}>{name}</span>
+							<span
+								className={`${sourceCodePro.className} bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text`}
+							>
+								{name}
+							</span>
 						</CardTitle>
 					</CardHeader>
 					<CardFooter>
-						<CardDescription>{description}</CardDescription>
+						<CardDescription className="text-gray-600 dark:text-gray-400">
+							{description}
+						</CardDescription>
 					</CardFooter>
 				</Card>
 			</Link>
@@ -74,19 +85,23 @@ export default function Home() {
 
 	return (
 		<div className="flex flex-col items-center *:my-10 w-full mx-16">
-			<h1 className="text-6xl font-black inline-block text-transparent bg-clip-text bg-gradient-to-br from-sky-400 from-0% via-fuchsia-500 via-100%">
+			<h1 className="text-6xl font-black inline-block text-transparent bg-clip-text bg-gradient-to-br from-sky-400 from-0% via-fuchsia-500 via-100% animate-gradient">
 				{greeting}
 			</h1>
 
-			<div className="flex flex-col items-center">
-				<p>Labへようこそ!</p>
-				<p>いっぱいツールを公開するよ</p>
+			<div className="flex flex-col items-center space-y-2">
+				<p className="text-2xl font-semibold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+					Web siteへようこそ!
+				</p>
+				<p className="text-gray-600 dark:text-gray-400">
+					色々な作品やSNSを公開しています
+				</p>
 			</div>
 
 			<Store title="Accounts" description="生活拠点">
 				<Item
 					name="instagram (@haruto.f_0414)"
-					description="フォローしてね"
+					description="たまにストーリーあげる...?"
 					url="https://www.instagram.com/haruto.f_0414?igsh=MXV6eDlzeXFiMmllaQ%3D%3D&utm_source=qr"
 				/>
 				<Item
@@ -101,13 +116,13 @@ export default function Home() {
 				/>
 				<Item
 					name="Discord (@Taruto)"
-					description="フレリクしてね"
+					description="フレリクはご自由にどうぞ(たぶん通す)"
 					url="https://discord.com/users/1095597729020915813"
 				/>
 				<Item
-					name="Duoringo (@taruto414)"
-					description="I like English"
-					url="https://www.duolingo.com/profile/taruto414"
+					name="Qiita (@e6nlaq)"
+					description="書くことがない..."
+					url="https://qiita.com/e6nlaq"
 				/>
 				<Item
 					name="Scratch (@-5min-)"
@@ -130,16 +145,31 @@ export default function Home() {
 				))}
 			</Store> */}
 
-			<Store title="Classic" description="私の作品">
+			<Store title="Classic" description="友達の作品">
 				<Item
-					name="Toolbox"
-					description="いろいろなツールが入っているサイト"
-					url="https://taruto-f.github.io/Toolbox/toolbox-app/"
+					name="rinu.jp Checker"
+					description="rinu.jpに特定ツールが仕込まれているかチェックするサイト"
+					url="https://e6nlaq.github.io/rinucf-checker"
 				/>
 				<Item
-					name="スペースインベーダー"
-					description="インベーダーゲーム"
-					url="https://taruto-f.github.io/invader-game/invader_game/"
+					name="School Hit"
+					description="学校で日にちから指名される確率を計算するサイト"
+					url="https://e6nlaq.github.io/school-hits"
+				/>
+				<Item
+					name="Study Typing"
+					description="学習単語タイピングサイト"
+					url="https://study-typing.vercel.app"
+				/>
+				<Item
+					name="Aqua"
+					description="Fast, short, and easy."
+					url="https://e6nlaq.github.io/aqua"
+				/>
+				<Item
+					name="e6nlaq.github.io"
+					description="旧サイト"
+					url="https://e6nlaq.github.io"
 				/>
 			</Store>
 		</div>

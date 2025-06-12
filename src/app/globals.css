@@ -62,9 +62,11 @@
 @layer base {
 	* {
 		@apply border-border;
+		font-family: "Noto Sans JP", sans-serif;
 	}
 	body {
 		@apply bg-background text-foreground;
+		font-family: "Noto Sans JP", sans-serif;
 	}
 }
 
